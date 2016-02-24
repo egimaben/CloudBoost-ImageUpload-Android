@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Upload and download image"
+    />
+	<ImageView android:id="@+id/image" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1" />
+	<TextView  
+	android:id="@+id/info"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="no image selected"
+    />
+	<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+	<Button android:text="pick image" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:onClick="fetchImage" />
+	<Button android:text="Upload image" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:onClick="uploadImage" />
+	</LinearLayout>
+		<Button android:text="Download from cloudboost" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:onClick="downloadImage" />
+</LinearLayout>
